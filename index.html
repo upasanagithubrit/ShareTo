@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>ShareTo!</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="nav">
+        <div class="search_container">
+          <img src="./svgs/search.svg" alt="S..">
+          <input id="searchBox" type="text" placeholder="Search Here">
+        </div>
+        
+        <div class="help_container">
+          <img src="./svgs/help.svg" alt="Lo.">
+          <span>Help & Support</span>
+        </div>
+    </div>
+  
+    <div class="left_nav">
+      <div class="profile">
+          <img id="profile_pic" src="./images/pic_Profile.jpeg" alt="Profile..">
+      </div>
+
+      <div class="options">
+        <div class="option_container">
+          <img src="./svgs/dashboard.svg" alt="Loading..">
+          <span>Dashboard</span>
+        </div>
+        
+        <div class="option_container">
+          <img src="./svgs/history.svg" alt="Loading..">
+          <span>History</span>
+        </div>
+        
+        <div class="option_container">
+          <img src="./svgs/search.svg" alt="Loading..">
+          <span>Find</span>
+        </div>
+        
+        <div class="option_container">
+          <img src="./svgs/settings.svg" alt="Loading..">
+          <span>Settings</span>
+        </div>
+      </div>
+
+      <div class="optional_options">
+          <img id="country_img" height="50" width="50" src="./images/india fleg.png" alt="Country">
+          <span>India</span>
+      </div>
+    </div>
+  
+    <main>
+      <div class="card_container">
+        <div class="card">
+          <img height="100" width="100" src="./svgs/upload.svg" alt="Upload...">
+          <span>0 GB Transfered</span>
+        </div>
+        <div class="card">
+          <img src="./svgs/download.svg" height="100" width="100" alt="Downlaod...">
+          <span>0 GB Recieved</span>
+        </div>
+        
+        <div class="card">
+          <img height="100" width="100" src="./svgs/path.svg" alt="path...">
+          <span>How to Use.</span>
+          <button id="direction_btn">Directions</button>
+        </div>
+
+        <div class="card">
+          <img id="file_img" src="./svgs/files.svg" alt="Files...">
+          <span>Drag & Drop Files / Folders</span>
+          <button id="browse_btn">Browse</button>
+        </div>
+      </div>
+    
+      <div class="details">
+
+        <h2 class="progress">
+          Current Progress
+        </h2>
+       <div class="loading">
+        <span>0%</span>
+        <div class="bar"></div>
+        <span>100%</span>
+       </div>
+      </div>
+    
+    </main>
+
+
+
+
+
+
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="./script.js"></script>
+
+  </html>
